@@ -1,0 +1,4 @@
+com/devops/todoapp/TodoApplication.class
+com/devops/todoapp/controller/TodoController.class
+com/devops/todoapp/model/Todo.class
+com/devops/todoapp/repository/TodoRepository.class

@@ -260,6 +260,32 @@ Les 3 VMs sont sur le même réseau privé `192.168.56.0/24`:
 - Configurer un pipeline CI/CD avec Jenkins
 - Conteneuriser avec Docker
 
+## Captures
+
+### Server DBA
+![Server DBA](captures/server-dba.png)
+
+### Server Back - Build clean install
+![Server Back Build](captures/server-back-build-clean-install-projet.png)
+
+### Server Back - Démarrage service Spring Boot
+![Server Back Démarrage Spring Boot](captures/server-back-demarrage-service-spring-boot.png)
+
+### Server Back - Résultat Spring Boot
+![Résultat Server Back Spring Boot](captures/resultat-server-back-spring-boot.png)
+
+### Server Back - Déploiement app et appel API
+![Server Back Déployer app et API](captures/server-back-deployer-app-et-fetch-api.png)
+
+### Server Front - Démarrage et déploiement
+![Server Front Démarrage](captures/server-front-demarrage-et-deploiement.png)
+
+### Server Front - Résultat Nginx
+![Résultat Server Front Nginx](captures/resultat-server-front-reponse-nginx.png)
+
+### Server Front - Interface HTML/CSS/JS
+![Server Front Interface](captures/resultat-server-front-interface-html-css-js.png)
+
 ## Auteur
 
 Étudiant M2 Génie Logiciel - Cours DevOps

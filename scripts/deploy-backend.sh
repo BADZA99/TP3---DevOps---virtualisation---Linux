@@ -29,8 +29,8 @@ WorkingDirectory=/vagrant/backend
 
 Environment=JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 Environment=SPRING_DATASOURCE_URL=jdbc:mysql://192.168.56.31:3306/todoapp
-Environment=SPRING_DATASOURCE_USERNAME=papabn
-Environment=SPRING_DATASOURCE_PASSWORD=passer
+Environment=SPRING_DATASOURCE_USERNAME=springuser
+Environment=SPRING_DATASOURCE_PASSWORD=springpass
 
 ExecStart=/usr/bin/java -jar ${JAR_FILE}
 Restart=always

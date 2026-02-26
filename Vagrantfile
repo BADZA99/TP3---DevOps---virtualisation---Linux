@@ -14,8 +14,8 @@ Vagrant.configure("2") do |config|
     back.vm.hostname = "server-back"
     back.vm.box_check_update = false
     
-    # Port Spring Boot
-    back.vm.network "forwarded_port", guest: 8080, host: 8080
+    # Port Spring Boot (host 8084 pour éviter conflits)
+    back.vm.network "forwarded_port", guest: 8080, host: 8084
     
     # Réseau privé
     back.vm.network "private_network", ip: "192.168.56.30"
@@ -37,7 +37,7 @@ Vagrant.configure("2") do |config|
     dba.vm.hostname = "server-dba"
     dba.vm.box_check_update = false
     
-    dba.vm.network "forwarded_port", guest: 3306, host: 3306
+    dba.vm.network "forwarded_port", guest: 3306, host: 3310
     dba.vm.network "private_network", ip: "192.168.56.31"
     
     dba.vm.provider "virtualbox" do |vb|
@@ -57,8 +57,8 @@ Vagrant.configure("2") do |config|
     front.vm.hostname = "server-front"
     front.vm.box_check_update = false
     
-    # Port Nginx
-    front.vm.network "forwarded_port", guest: 80, host: 8081
+    # Port Nginx (host 8085 pour éviter conflits)
+    front.vm.network "forwarded_port", guest: 80, host: 8085
     
     front.vm.network "private_network", ip: "192.168.56.32"
     
